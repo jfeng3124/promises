@@ -11,7 +11,7 @@ var pluckFirstLineFromFile = function (filePath, cb) {
     if (err) {
       cb(err);
     } else {
-      cb(null, results.toString('utf8').split('\n').shift());
+      cb(null, results.toString().split('\n')[0]);
     }
   });
 };
